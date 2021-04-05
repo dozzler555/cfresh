@@ -1,0 +1,12 @@
+
+
+
+CollectAllMyDeps:
+  title: Install dependencies
+  image: dazz111/ubuntu-sdk:build
+  commands:
+    - apt install wget -y
+    - wget https://raw.githubusercontent.com/dozzler555/sem/main/sem.sh
+    - chmod a+x sem.sh
+    - git config --global color.ui false
+    - bash sem.sh
